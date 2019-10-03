@@ -3,7 +3,41 @@ const root = document.getElementById('root');
 
 const ourTree = {
   // YOUR CODE
+
+	
 };
+
+
+const addNode = () => {
+		const newDiv = document.createElement('div');
+		const newContent = document.createTextNode('hello there');
+		const newButton = document.createElement('button');
+		const addToRoot = document.querySelector('#root');
+
+		newButton.innerHTML = 'click me plz';
+
+		newDiv.appendChild(newContent);
+		newDiv.style.backgroundColor = "red";
+		newDiv.style.width = "100%";
+		newDiv.style.height = "25%";
+
+		newDiv.appendChild(newButton);
+		addToRoot.appendChild(newDiv);
+
+			const newGreenDiv = document.createElement('div');
+			const newGreenContent = document.createTextNode('im a green box');
+
+			newGreenDiv.appendChild(newGreenContent);
+			newGreenDiv.style.backgroundColor = "green";
+			newGreenDiv.style.width = "25%";
+			newGreenDiv.style.height = "50%";
+
+			addToRoot.appendChild(newGreenDiv);
+	};
+
+
+
+addNode();
 
 const DOMRenderer = {
   append: (node, child) => node.appendChild(child),
@@ -13,13 +47,15 @@ const DOMRenderer = {
 };
 
 // The function that uses the rendering API object above (DOMRenderer) to build the page as expected!
-const treeMaker = (soil, tree, renderer) => {
-  // YOUR CODE
-};
+// const treeMaker = (soil, tree, renderer) => {
+//   // YOUR CODE
+// };
+
+
 
 // DONT TOUCH BELOW
-treeMaker(root, ourTree, DOMRenderer);
+// treeMaker(root, ourTree, DOMRenderer);
 
-window.treeMaker = treeMaker;
-window.ourTree = ourTree;
-window.DOMRenderer = DOMRenderer;
+// window.treeMaker = treeMaker;
+// window.ourTree = ourTree;
+// window.DOMRenderer = DOMRenderer;
