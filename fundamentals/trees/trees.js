@@ -3,7 +3,37 @@ const root = document.getElementById('root');
 
 const ourTree = {
   // YOUR CODE
+  type: 'div',
+  style: {
+  	width: '100%',
+  	height: '25%',
+  	border: 'solid 1px black',
+  	['background-color']: 'red';
+  	
+  },
 
+  children: [
+
+  }
+
+
+
+
+  	'div':
+  		{ 'div': {
+  			"div":{},
+  			"attribute"
+  		},
+  		"attribute": {
+  				"backgroundColor": "red",
+  				"width":100%,
+  				"height":25%
+  			}
+
+  		}
+	  	
+// color: red,
+  		// border: solid 1px black;
 	
 };
 
@@ -47,15 +77,22 @@ const DOMRenderer = {
 };
 
 // The function that uses the rendering API object above (DOMRenderer) to build the page as expected!
-// const treeMaker = (soil, tree, renderer) => {
-//   // YOUR CODE
-// };
+const treeMaker = (soil, tree, renderer) => {
+  // YOUR CODE
+
+  const currentTreeNode - renderer.create(tree,type);
+
+  Object.entries(tree).forEach(pairOfKeyAndVal) = {
+
+  }
+
+};
 
 
 
 // DONT TOUCH BELOW
-// treeMaker(root, ourTree, DOMRenderer);
+treeMaker(root, ourTree, DOMRenderer);
 
-// window.treeMaker = treeMaker;
-// window.ourTree = ourTree;
-// window.DOMRenderer = DOMRenderer;
+window.treeMaker = treeMaker;
+window.ourTree = ourTree;
+window.DOMRenderer = DOMRenderer;
